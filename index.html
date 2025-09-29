@@ -1,9 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evraziya</title>
+    <title>ЦАО Евразия</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="./image/лого 1.png" alt="Logo" class="w-10 h-10" />
+          <span class="text-lg font-bold">Евразия</span>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="./food.html" class="hover:text-blue-600">Курорт</a>
+          <a href="./gosti.html" class="hover:text-blue-600">Проживание</a>
+          <a href="#" class="hover:text-blue-600">Услуги и тарифы</a>
+          <a href="#" class="hover:text-blue-600">Аренда</a>
+          <a href="#" class="hover:text-blue-600">Для бизнеса</a>
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700"
+            >Купить онлайн</a
+          >
+        </nav>
+        <button class="md:hidden text-gray-700 focus:outline-none">☰</button>
+      </div>
+    </header>
+    <section class="relative">
+      <img
+        src="./image/shutterstock_519952078 1.png"
+        class="w-full object-cover h-[220px] sm:h-[320px] md:h-[500px]"
+        alt=""
+      />
+      <div
+        class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-4"
+      >
+        <div class="text-white">
+          <h1 class="text-xl sm:text-3xl md:text-4xl font-bold mb-2">
+            30 декабря в ЦАО "Евразия"
+          </h1>
+          <p class="text-xs sm:text-base md:text-lg">
+            Состоится тестовое открытие 2 склона
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 py-10">
+      <h2
+        class="text-lg sm:text-xl md:text-2xl font-bold text-blue-700 mb-6 text-center"
+      >
+        Центр активного отдыха "Евразия"
+      </h2>
+      <div
+        class="bg-white shadow rounded-xl overflow-hidden flex flex-col md:flex-row"
+      >
+        <img
+          src="./image/streetlab_battle 8_ecb126b4ad8a1bf26e1b87afa104a0b1 2.png"
+          class="w-full md:w-1/2 object-cover"
+          alt=""
+        />
+        <div class="p-6 flex items-center bg-[#0080DD]">
+          <p class="text-white text-gray-700 text-sm sm:text-base">
+            Мы рады приветствовать любителей активного отдыха в нашем
+            экологичном парке — самом динамично развивающемся горнолыжном центре
+            Южного Урала!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 py-10">
+      <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-blue-700 mb-6">
+        Акции и спец предложения
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group.png" class="w-full" alt="" />
+          <div class="p-4 text-sm">30 декабря — тестовое открытие склона</div>
+        </div>
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group.png" class="w-full" alt="" />
+          <div class="p-4 text-sm">30 декабря — тестовое открытие склона</div>
+        </div>
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group (1).png" class="w-full" alt="" />
+          <div class="p-4 text-sm">
+            31 декабря - 8 января — новогодняя программа
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group (2).png" class="w-full" alt="" />
+          <div class="p-4 text-sm">BBQ площадки</div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 py-10">
+      <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-blue-700 mb-6">
+        Афиша
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group (3).png" class="w-full" alt="" />
+          <div class="p-4 text-sm"></div>
+        </div>
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group (4).png" class="w-full" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 py-10">
+      <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-blue-700 mb-6">
+        Новости
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group (6).png" class="w-full" alt="" />
+        </div>
+        <div class="shadow rounded-xl overflow-hidden">
+          <img src="./image/Mask group (7).png" class="w-full" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#D9D9D9] text-black py-10 mt-10">
+      <div
+        class="container mx-auto px-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3"
+      >
+        <div>
+          <img src="./image/лого 1.png" alt="" />
+          <p class="text-sm">Центр активного отдыха в Южном Урале</p>
+          <div class="flex gap-10">
+            <div class="flex flex-col mt-5">
+              <a href="#">Услуги</a>
+              <a href="#">Трассы</a>
+              <a href="#">Кафе</a>
+              <a href="#">Гостиница</a>
+              <a href="#">О комплексе</a>
+            </div>
+            <div class="flex flex-col mt-5">
+              <a href="#">Новости</a>
+              <a href="#">Тарифы</a>
+              <a href="#">Прокат</a>
+              <a href="#">Акции и туры</a>
+              <a href="#">Цены на услуги</a>
+              <a href="#">Схема проезда</a>
+            </div>
+            <div class="flex flex-col mt-5">
+              <a href="#">Туры</a>
+              <a href="#">Проживание</a>
+              <a href="#">Забронировать номер</a>
+              <a href="#">Детям</a>
+              <a href="#">Акции</a>
+              <a href="#">Веб-камеры</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-bold text-black mb-2">Режим работы</h3>
+          <p class="text-sm">Пн-Пт: 11:00 - 21:00</p>
+          <p class="text-sm">Сб-Вс: 9:00 - 21:00</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Контакты</h3>
+          <p>
+            Всесезонный центр спорта и отдыха - находится в рекреационной зоне
+            на границе с заповедниками «Таганай» и «Зюраткуль» всего в 30
+            минутах езды от Златоуста, и в 1,5 часах от Челябинска.
+          </p>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-xs mt-6">
+        © 2025 Евразия. Все права защищены.
+      </div>
+    </footer>
+  </body>
 </html>
