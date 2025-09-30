@@ -27,8 +27,26 @@
           <a href="#" class="hover:underline">Афиша</a>
           <a href="./index.html">Home</a>
         </nav>
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          ☰
+        </button>
+
         <div class="text-sm text-slate-500 hidden sm:block">
           +7 922 728 8288
+        </div>
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden px-4 pb-4 flex flex-col space-y-2 bg-gray-50 border-t"
+        >
+          <a href="./food.html" class="hover:text-blue-600">Курорт</a>
+          <a href="./gosti.html">Проживание</a>
+          <a href="./tyubig.html">Услуги и тарифы</a>
+          <a href="#">Афиша</a>
+          <a href="#">Для бизнеса</a>
+          <a href="#">Купить онлайн</a>
         </div>
       </header>
       <section class="relative rounded-2xl overflow-hidden shadow-lg">
@@ -217,6 +235,14 @@
           © 2025 Евразия. Все права защищены.
         </div>
       </footer>
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
     </div>
   </body>
 </html>

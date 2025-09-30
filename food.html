@@ -30,7 +30,23 @@
           >
           <a href="./index.html">Home</a>
         </nav>
-        <button class="md:hidden text-gray-700 focus:outline-none">☰</button>
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 flex flex-col space-y-2 bg-gray-50 border-t"
+      >
+        <a href="./food.html" class="hover:text-blue-600">Курорт</a>
+        <a href="./gosti.html">Проживание</a>
+        <a href="./tyubig.html">Услуги и тарифы</a>
+        <a href="#">Афиша</a>
+        <a href="#">Для бизнеса</a>
+        <a href="#">Купить онлайн</a>
       </div>
     </header>
     <section class="relative">
@@ -158,5 +174,13 @@
         © 2025 Евразия. Все права защищены.
       </div>
     </footer>
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
