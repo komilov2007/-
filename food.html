@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Евразия - BBQ площадки</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-sans bg-gray-50 text-gray-800">
     <header class="bg-white shadow sticky top-0 z-50">
@@ -49,7 +50,7 @@
         <a href="#">Купить онлайн</a>
       </div>
     </header>
-    <section class="relative">
+    <section class="relative" data-aos="fade-up">
       <img
         src="./image/ood.png"
         class="w-full object-cover h-[220px] sm:h-[320px] md:h-[450px]"
@@ -57,6 +58,7 @@
       />
       <div
         class="absolute inset-0 bg-black/40 flex items-center justify-center px-4"
+        data-aos="fade-up"
       >
         <div class="text-white text-center">
           <h1 class="text-xl sm:text-3xl md:text-4xl font-bold mb-2">
@@ -70,11 +72,11 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto px-4 py-10">
+    <section class="container mx-auto px-4 py-10" data-aos="fade-up">
       <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-center mb-6">
         Стоимость аренды мангальной зоны
       </h2>
-      <div class="overflow-x-auto">
+      <div class="overflow-x-auto" data-aos="fade-up">
         <table class="w-full border border-gray-200 text-sm md:text-base">
           <thead>
             <tr class="bg-gray-100 text-left">
@@ -103,7 +105,7 @@
         розжига, уголь.
       </p>
     </section>
-    <section class="container mx-auto px-4 pb-10">
+    <section class="container mx-auto px-4 pb-10" data-aos="fade-up">
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <img
           src="./image/grilled-chicken-legs-on-the-flaming-grill-with-grilled-vegetables-with-tomatoes-potatoes-pepper-seeds-salt 2.png"
@@ -181,6 +183,11 @@
       menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

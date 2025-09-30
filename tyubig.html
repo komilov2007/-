@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ЦАО Евразия</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-sans text-gray-800">
     <header class="w-full border-b bg-white">
@@ -38,7 +39,7 @@
         <a href="#">Купить онлайн</a>
       </div>
     </header>
-    <section class="relative max-w-[97%] pl-[4%]">
+    <section class="relative max-w-[97%] pl-[4%]" data-aos="fade-up">
       <img
         src="./image/tyubig.png"
         alt="Тюбинг"
@@ -46,6 +47,7 @@
       />
       <div
         class="absolute inset-0 flex flex-col justify-center items-center px-4 text-center"
+        data-aos="fade-up"
       >
         <h1 class="text-white text-2xl sm:text-4xl font-bold mb-4">Тюбинг</h1>
         <p class="pt-[] text-white text-sm sm:text-base max-w-2xl">
@@ -54,7 +56,7 @@
         </p>
       </div>
     </section>
-    <section class="max-w-4xl mx-auto px-4 py-8 text-center">
+    <section class="max-w-4xl mx-auto px-4 py-8 text-center" data-aos="fade-up">
       <p class="text-blue-600 text-sm sm:text-base font-medium mb-2">
         Тюбинговая трасса, протяженностью 150 метров, расположенная возле
         административного здания ЦАО "Евразия".
@@ -63,13 +65,13 @@
         ТРАССА "ТЮБИНГ" ОТКРЫТА
       </h2>
     </section>
-    <section class="max-w-5xl mx-auto px-2 sm:px-4 py-6">
+    <section class="max-w-5xl mx-auto px-2 sm:px-4 py-6" data-aos="fade-up">
       <h3
         class="text-blue-600 font-semibold mb-4 text-center text-sm sm:text-base"
       >
         СТОИМОСТЬ ПРОКАТА ВАТРУШЕК (ТЮБИНГ)
       </h3>
-      <div class="overflow-x-auto">
+      <div class="overflow-x-auto" data-aos="fade-up">
         <table class="w-full border text-xs sm:text-sm min-w-[500px]">
           <thead class="bg-gray-100">
             <tr>
@@ -81,7 +83,7 @@
               <th class="p-2 border">Весь день</th>
             </tr>
           </thead>
-          <tbody class="text-center">
+          <tbody class="text-center" data-aos="fade-up">
             <tr>
               <td class="border p-2">Ватрушка (тюбинг)</td>
               <td class="border p-2">Будни</td>
@@ -110,7 +112,7 @@
         </table>
       </div>
     </section>
-    <section class="max-w-3xl mx-auto px-4 py-6 text-center">
+    <section class="max-w-3xl mx-auto px-4 py-6 text-center" data-aos="fade-up">
       <p class="text-xs sm:text-sm text-gray-600 mb-4">
         Администрация ЦАО "Евразия" не несет ответственности за возможные
         травмы, полученные в результате катания.
@@ -128,12 +130,13 @@
     </section>
     <section
       class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+      data-aos="fade-up"
     >
       <img src="./image/opa.png" alt="Катание" class="rounded-xl shadow" />
       <img src="./image/opa1.png" alt="Катание" class="rounded-xl shadow" />
       <img src="./image/opa.png" alt="Катание" class="rounded-xl shadow" />
     </section>
-    <div class="flex justify-center space-x-6 py-6">
+    <div class="flex justify-center space-x-6 py-6" data-aos="fade-up">
       <a href="#"><img src="./image/w1.png" alt="VK" class="" /></a>
       <a href="#"><img src="./image/youtube.png" alt="YouTube" class="" /></a>
       <a href="#"><img src="./image/w.png" alt="OK" class="" /></a>
@@ -196,6 +199,11 @@
       menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

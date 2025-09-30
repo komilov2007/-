@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Евразия — Проживание (Tailwind only)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-white text-slate-800 antialiased">
     <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +50,10 @@
           <a href="#">Купить онлайн</a>
         </div>
       </header>
-      <section class="relative rounded-2xl overflow-hidden shadow-lg">
+      <section
+        class="relative rounded-2xl overflow-hidden shadow-lg"
+        data-aos="fade-up"
+      >
         <img
           src="./image/friends-skiers-having-fun-at-ski-resort-in-the-mountains-in-winter-skiing-and-snowboarding 1 (1).png"
           alt="hero"
@@ -57,6 +61,7 @@
         />
         <div
           class="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/25"
+          data-aos="fade-up"
         ></div>
         <div class="absolute left-6 top-6 md:left-10 md:top-10 text-white">
           <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold">
@@ -70,6 +75,7 @@
         </div>
         <div
           class="absolute right-6 top-6 bg-white/95 rounded-xl p-3 w-40 md:w-48 text-sm text-slate-700 shadow"
+          data-aos="fade-up"
         >
           <ul class="space-y-2">
             <li class="flex items-center gap-2"><span>📷</span> Веб-камеры</li>
@@ -81,10 +87,10 @@
           </ul>
         </div>
       </section>
-      <h2 class="mt-8 text-2xl font-bold text-sky-600">
+      <h2 class="mt-8 text-2xl font-bold text-sky-600" data-aos="fade-up">
         Проживание в ЦАО "Евразия"
       </h2>
-      <main class="space-y-6 mt-6">
+      <main class="space-y-6 mt-6" data-aos="fade-up">
         <article
           class="flex flex-col sm:flex-row gap-4 bg-white rounded-xl p-4 md:p-6 shadow"
         >
@@ -93,7 +99,7 @@
             alt="korpus gorod"
             class="w-full sm:w-48 h-36 sm:h-32 object-cover rounded-lg flex-shrink-0"
           />
-          <div class="flex-1">
+          <div class="flex-1" data-aos="fade-up">
             <div class="text-xs text-sky-500 mb-1">
               10 минут на автобусе или автомобиле
             </div>
@@ -104,7 +110,7 @@
               кровати), большой шкаф, прихожая. В каждом номере - душ, раковина,
               санузел. Корпус расположен в 10 минутах от территории курорта.
             </p>
-            <div class="mt-4">
+            <div class="mt-4" data-aos="fade-up">
               <a
                 href="#"
                 class="inline-block px-5 py-2 rounded-full bg-sky-600 text-white text-sm font-medium hover:bg-sky-700"
@@ -115,14 +121,15 @@
         </article>
         <article
           class="flex flex-col sm:flex-row gap-4 bg-white rounded-xl p-4 md:p-6 shadow"
+          data-aos="fade-up"
         >
           <img
             src="./image/folded-towels-on-the-bed 1 (2).png"
             alt="korpus gornyi"
             class="w-full sm:w-48 h-36 sm:h-32 object-cover rounded-lg flex-shrink-0"
           />
-          <div class="flex-1">
-            <div class="text-xs text-sky-500 mb-1">
+          <div class="flex-1" data-aos="fade-up">
+            <div class="text-xs text-sky-500 mb-1" data-aos="fade-up">
               600 метров от подъемника
             </div>
             <h3 class="font-semibold text-lg">Корпус "Горный"</h3>
@@ -131,7 +138,7 @@
               здания) мы можем предложить размещение в 54 двухместных, 12
               одноместных и 12 спортивных номерах.
             </p>
-            <div class="mt-4">
+            <div class="mt-4" data-aos="fade-up">
               <a
                 href="#"
                 class="inline-block px-5 py-2 rounded-full bg-sky-600 text-white text-sm font-medium hover:bg-sky-700"
@@ -142,13 +149,14 @@
         </article>
         <article
           class="flex flex-col sm:flex-row gap-4 bg-white rounded-xl p-4 md:p-6 shadow"
+          data-aos="fade-up"
         >
           <img
             src="./image/young-hotel-maid-putting-stack-of-fresh-white-bath-towels 1.png"
             alt="korpus lesnoi"
             class="w-full sm:w-48 h-36 sm:h-32 object-cover rounded-lg flex-shrink-0"
           />
-          <div class="flex-1">
+          <div class="flex-1" data-aos="fade-up">
             <div class="text-xs text-sky-500 mb-1">
               гостевой домик, 2 километра от подъемника
             </div>
@@ -157,7 +165,7 @@
               Также для размещения предлагается гостевой домик (2 км от
               подъемника и сервисного здания) для компаний до 16 человек.
             </p>
-            <div class="mt-4">
+            <div class="mt-4" data-aos="fade-up">
               <a
                 href="#"
                 class="inline-block px-5 py-2 rounded-full bg-sky-600 text-white text-sm font-medium hover:bg-sky-700"
@@ -167,7 +175,7 @@
           </div>
         </article>
       </main>
-      <section class="mt-8 text-center py-6">
+      <section class="mt-8 text-center py-6" data-aos="fade-up">
         <p class="text-sm text-slate-500">
           Заселение в гостиницу производится только при предъявлении паспорта.
         </p>
@@ -178,7 +186,7 @@
         <p class="mt-2 text-sm text-slate-500">
           Бронирование осуществляется по предоплате.
         </p>
-        <div class="flex gap-3 justify-center mt-10">
+        <div class="flex gap-3 justify-center mt-10" data-aos="fade-up">
           <img src="./image/w1.png" alt="" />
           <img src="./image/youtube.png" alt="" />
           <img src="./image/w.png" alt="" />
@@ -244,5 +252,10 @@
         });
       </script>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
